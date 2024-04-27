@@ -30,5 +30,10 @@ cp target/Fan.war /home/harsh/Documents/apache-tomcat-9.0.88/webapps
 echo "Deployed to UAT"
 fi'''         }
       }
+stage("Notification"){
+    steps{
+mail bcc: '', body: '', cc: '', from: '', replyTo: '', subject: '', to: 'harshnathile@gmail.com'
+}
+}
    }
  }
