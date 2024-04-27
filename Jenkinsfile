@@ -32,8 +32,7 @@ fi'''         }
       }
 stage("Notification"){
     steps{
-mail bcc: '', body: '', cc: '', from: '', replyTo: '', subject: '', to: 'harshnathile@gmail.com'
-}
+mail bcc: '', body: 'Build is in Process', cc: '', from: '', replyTo: '', subject: 'Build In Process', to: 'harshnathile@gmail.com'}
 }
    }
  }
